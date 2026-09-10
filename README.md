@@ -26,6 +26,20 @@ Most AI governance portfolios either stop at a policy summary (no technical dept
 - Every finding mapped simultaneously to a MITRE ATLAS technique, an OWASP LLM Top 10 category, a NIST AI RMF subcategory, an ISO/IEC 42001 Annex A control, and (where applicable) an EU AI Act article — so one assessment can support an engineering fix, a certification audit, and a regulatory conformity file without being redone three times.
 - Full EU AI Act conformity gap assessment across Articles 9, 10, 12, 13, 14 and Annex IV.
 
+## Interactive Risk Dashboard
+
+A live, filterable view of the risk register and EU AI Act gap assessment, built directly from the worksheet data in `worksheets/`.
+
+- **Risk Register** — filter findings by rating (Critical/High/Medium/Low) and status, with a live severity breakdown chart
+- **EU AI Act Gaps** — Met / Partially Met / Not Met status per article, with linked findings and remediation owner
+- **Risk Classification** and **Threat & Test Matrix** rendered as structured, readable views of Tabs 1 and 2
+
+No backend, no build step — a single HTML file.
+
+**[Live demo →](https://prathibhanandeesh.github.io/Agentic_AI_Assurance_Framework/)** · source: `index.html`
+
+![Risk Dashboard preview](assets/screenshot_6_dashboard.jpg)
+
 ## Preview
 
 **Threat & Test Case Matrix** — six manual adversarial tests, each mapped to a MITRE ATLAS technique and OWASP LLM Top 10 category, with a pre-defined pass/fail condition and captured evidence:
@@ -46,8 +60,9 @@ Most AI governance portfolios either stop at a policy summary (no technical dept
 
 ## How to Read This Project
 
+- **Hiring manager, 30 seconds:** open the [live dashboard](https://prathibhanandeesh.github.io/Agentic_AI_Assurance_Framework/) — Risk Register tab
 - **Hiring manager, 2 minutes:** `docs/03_Executive_Summary.docx`
-- **GRC / governance reviewer:** `docs/01_Agentic_AI_Assurance_Framework.docx` → `worksheets/...xlsx` (all 4 tabs in order) → `docs/02_How_to_Apply_This_Framework.docx`
+- **GRC / governance reviewer:** `docs/01_Agentic_AI_Assurance_Framework.docx` → `worksheets/...xlsx` (all 4 tabs in order) → `index.html` (interactive view of the same data) → `docs/02_How_to_Apply_This_Framework.docx`
 - **Anyone assessing a different agent:** start directly at `docs/02_How_to_Apply_This_Framework.docx`
 
 ## Frameworks Referenced
